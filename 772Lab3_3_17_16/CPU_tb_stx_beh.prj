@@ -1,0 +1,8 @@
+verilog isim_temp "Register_File.v"
+verilog isim_temp "Memory_File.v"
+verilog isim_temp "General_Modules.v"
+verilog isim_temp "Control_SM.v"
+verilog isim_temp "ALU.v"
+verilog isim_temp "Multicycle_Datapath.v"
+verilog isim_temp "CPU_tb.v"
+verilog isim_temp "E:/Programs/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,33 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o X:/Desktop/Lab3/CPU_tb_isim_beh.exe -prj X:/Desktop/Lab3/CPU_tb_beh.prj work.CPU_tb work.glbl 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "X:/Desktop/Lab3/Register_File.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/Memory_File.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/General_Modules.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/Control_SM.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/ALU.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/Multicycle_Datapath.v" into library work
+Analyzing Verilog file "X:/Desktop/Lab3/CPU_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "X:/Desktop/Lab3/Multicycle_Datapath.v" Line 73: Size mismatch in connection of port <Out>. Formal port size is 32-bit while actual signal size is 16-bit.
+Completed static elaboration
+Compiling module Control_SM
+Compiling module FFwReset_en
+Compiling module input2_mux
+Compiling module Memory_File
+Compiling module input5_mux
+Compiling module Register_File
+Compiling module input4_mux
+Compiling module ALU
+Compiling module Multicycle_Datapath
+Compiling module CPU_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable X:/Desktop/Lab3/CPU_tb_isim_beh.exe
+Fuse Memory Usage: 28532 KB
+Fuse CPU Usage: 779 ms

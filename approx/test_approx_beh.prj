@@ -1,0 +1,3 @@
+verilog work "approx_mul.v"
+verilog work "test_approx.v"
+verilog work "C:/Xilinx/14.2/ISE_DS/ISE//verilog/src/glbl.v"

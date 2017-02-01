@@ -1,0 +1,78 @@
+Checking out license 'RTL_Compiler_Ultra'... (1 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v07.10-s016_1 (32-bit), built Sep 13 2007
+
+
+
+================================================================================
+              Welcome to Encounter (TM) Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+      object  attribute
+      ------  ---------
+    instance  black_box
+    instance  dft_inherited_dont_scan
+    instance  write_positional_connections
+         net  logic0_driven
+         net  logic1_driven
+        root  area_per_unit_length
+        root  bit_blast_constants
+        root  bit_blast_mapped_ports
+        root  capacitance_per_unit_length
+        root  degenerate_complex_seqs
+        root  exact_match_seqs_async_controls
+        root  gen_no_negative_index
+        root  gen_unconnected_port_style
+        root  gen_write_empty_module_for_logic_abstract
+        root  hdl_array_generator
+        root  hdl_flatten_array
+        root  hdl_old_reg_naming
+        root  hdl_record_generator
+        root  hdl_reg_naming_style_scalar
+        root  hdl_reg_naming_style_vector
+        root  hdl_vector_naming_style
+        root  pqos_virtual_buffer
+        root  resistance_per_unit_length
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> source libs.tcl
+  Setting attribute of root '/': 'library' = /ad/eng/courses/ec/ec772/Spring2011/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ccs.lib
+  Setting attribute of root '/': 'hdl_search_path' =  ../../../src 
+  Setting attribute of root '/': 'hdl_max_loop_limit' = 10000
+rc:/> read_netlist -top Multicycle_Datapath synthesized.v
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Done reading and elaborating the structural design 'Multicycle_Datapath'.
+rc:/> 

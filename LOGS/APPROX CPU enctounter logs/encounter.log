@@ -1,0 +1,114 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p068.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.13-s229_1 (32bit) 10/22/2010 15:32 (Linux 2.6)
+@(#)CDS: NanoRoute v09.13-s023 NR101021-1752/USR65-UB (database version 2.30, 109.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.13-s071_1 (32bit) 10/18/2010 04:07:09 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.12-e022 (32bit) 10/22/2010 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.13-s122_1 (32bit) Oct 18 2010 03:21:02 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.13-s009
+--- Starting "Encounter v09.13-s229_1" on Tue Apr 26 15:25:19 2016 (mem=46.5M) ---
+--- Running on vlsi23 (x86_64 w/Linux 2.6.32-573.12.1.el6.x86_64) ---
+This version was compiled on Fri Oct 22 15:32:54 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "/tmp/SPC_script25355" ...
+<CMD> setImportMode -keepEmptyModule 0
+<CMD_INTERNAL> loadNetlist -i verilog ../../rc-synth/current/synthesized.v
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../../rc-synth/current/synthesized.v'
+Module MUX2_X2 not defined.  Created automatically.
+Module INV_X1 not defined.  Created automatically.
+Module NAND2_X1 not defined.  Created automatically.
+Module AOI222_X1 not defined.  Created automatically.
+Module AOI22_X1 not defined.  Created automatically.
+Module NAND3_X1 not defined.  Created automatically.
+Module NOR2_X2 not defined.  Created automatically.
+Module DFF_X2 not defined.  Created automatically.
+Module INV_X4 not defined.  Created automatically.
+Module AOI22_X2 not defined.  Created automatically.
+Module AND2_X4 not defined.  Created automatically.
+Module NOR2_X4 not defined.  Created automatically.
+Module NAND2_X2 not defined.  Created automatically.
+Module OAI21_X2 not defined.  Created automatically.
+Module INV_X2 not defined.  Created automatically.
+Module OR2_X4 not defined.  Created automatically.
+Module AND2_X2 not defined.  Created automatically.
+Module XNOR2_X1 not defined.  Created automatically.
+Module FA_X1 not defined.  Created automatically.
+Module HA_X1 not defined.  Created automatically.
+Module XNOR2_X2 not defined.  Created automatically.
+Module AOI21_X2 not defined.  Created automatically.
+Module NOR3_X2 not defined.  Created automatically.
+Module AOI221_X2 not defined.  Created automatically.
+Module OAI211_X2 not defined.  Created automatically.
+Module NAND3_X2 not defined.  Created automatically.
+Module OR3_X2 not defined.  Created automatically.
+Module OR2_X2 not defined.  Created automatically.
+Module OAI221_X2 not defined.  Created automatically.
+Module AND4_X4 not defined.  Created automatically.
+Module NAND4_X2 not defined.  Created automatically.
+Module NOR2_X1 not defined.  Created automatically.
+Module AOI21_X1 not defined.  Created automatically.
+Module OAI22_X2 not defined.  Created automatically.
+Module OAI21_X1 not defined.  Created automatically.
+Module NAND2_X4 not defined.  Created automatically.
+Module INV_X8 not defined.  Created automatically.
+Module AOI211_X2 not defined.  Created automatically.
+Module XOR2_X1 not defined.  Created automatically.
+Module AND4_X1 not defined.  Created automatically.
+Module OAI211_X1 not defined.  Created automatically.
+Module AND3_X4 not defined.  Created automatically.
+Module OR3_X4 not defined.  Created automatically.
+Module NOR3_X1 not defined.  Created automatically.
+Module DFF_X1 not defined.  Created automatically.
+Module NAND4_X1 not defined.  Created automatically.
+Module NOR4_X1 not defined.  Created automatically.
+Module OR4_X2 not defined.  Created automatically.
+Module DLL_X2 not defined.  Created automatically.
+Module OR4_X4 not defined.  Created automatically.
+Module BUF_X4 not defined.  Created automatically.
+Module NOR4_X2 not defined.  Created automatically.
+Inserting temporary buffers to remove assignment statements.
+Module AND4_X2 not defined.  Created automatically.
+Module AND3_X2 not defined.  Created automatically.
+
+*** Memory Usage v0.159.2.9 (Current mem = 169.395M, initial mem = 46.484M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=169.4M) ***
+<CMD> setTopCell Multicycle_Datapath
+Set top cell to Multicycle_Datapath.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell Multicycle_Datapath ...
+*** Netlist is unique.
+Uniquify Netlist ...
+Writing Uniquified Netlist 'synthesized_unique.v' ...
+
+*** Memory Usage v0.159.2.9 (Current mem = 176.098M, initial mem = 46.484M) ***
+--- Ending "Encounter" (totcpu=0:00:02.7, real=0:00:13.0, mem=176.1M) ---

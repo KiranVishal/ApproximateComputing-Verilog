@@ -1,0 +1,325 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Tue Mar 29 14:04:34 2016                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v09.13-s229_1 (32bit) 10/22/2010 15:32 (Linux 2.6)
+#@(#)CDS: NanoRoute v09.13-s023 NR101021-1752/USR65-UB (database version 2.30, 109.2.1) {superthreading v1.15}
+#@(#)CDS: CeltIC v09.13-s071_1 (32bit) 10/18/2010 04:07:09 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: AAE 09.12-e022 (32bit) 10/22/2010 (Linux 2.6.9-78.0.25.ELsmp)
+#@(#)CDS: CTE 09.13-s122_1 (32bit) Oct 18 2010 03:21:02 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v09.13-s009
+
+setUIVar rda_Input ui_timingcon_file ../par.sdc
+setUIVar rda_Input ui_leffile ../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef
+setUIVar rda_Input ui_timelib ../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_typical_conditional_ccs.lib
+setUIVar rda_Input ui_netlist synthesized_unique.v
+setUIVar rda_Input ui_timelib,min ../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ccs.lib
+setUIVar rda_Input ui_timelib,max ../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_slow_conditional_ccs.lib
+setUIVar rda_Input ui_topcell Multicycle_Datapath
+commitConfig
+fit
+setDrawView fplan
+setDrawView ameba
+setDrawView fplan
+setDrawView place
+setDrawView fplan
+placeDesign
+setDrawView ameba
+setDrawView place
+setDrawView ameba
+setDrawView place
+setDrawView ameba
+optDesign -preCTS
+setDrawView place
+setDrawView ameba
+redraw
+setDrawView place
+createClockTreeSpec -output par.clk -routeClkNet
+specifyClockTree -clkfile par.clk
+ckSynthesis
+zoomIn
+zoomOut
+fit
+zoomIn
+zoomIn
+zoomIn
+zoomIn
+zoomIn
+zoomIn
+zoomIn
+windowSelect 309.930 311.458 310.487 311.769
+windowSelect 310.675 310.933 310.712 311.329
+selectObject Pin memory/g1569815/B1
+fit
+deselectAll
+selectInst memory/FE_OFC7750_n_36245
+deselectAll
+selectInst memory/FE_OFC4384_B_D_out_4_
+deselectAll
+selectInst memory/g1585623
+deselectAll
+redraw
+redraw
+redraw
+displayClockPhaseDelay
+redraw
+zoomIn
+zoomIn
+fit
+clearClockDisplay
+redraw
+globalDetailRoute
+fit
+setAnalysisMode -setup -async -skew -clockTree
+setAnalysisMode -checkType setup -asyncChecks async -skew true -clockPropagation sdcControl
+redraw
+setAnalysisMode -checkType setup -asyncChecks async -skew true -clockPropagation sdcControl
+redraw
+buildTimingGraph
+redraw
+redraw
+fit
+setDrawView ameba
+setDrawView place
+fit
+fit
+get_time_unit
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+deselectAll
+selectPath 1
+deselectAll
+selectPath 1
+setDrawView ameba
+zoomBox 314.898 153.518 632.499 -10.606
+windowSelect 331.917 133.654 345.409 36.755
+windowSelect 342.548 90.724 530.621 -35.205
+windowSelect 345.818 107.487 590.724 -50.332
+deselectAll
+redraw
+deselectAll
+selectPath 1
+deselectAll
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+fit
+zoomBox 332.642 99.401 518.943 -32.785
+deselectAll
+redraw
+deselectAll
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+windowSelect 367.521 88.228 477.532 -0.985
+deselectAll
+redraw
+deselectAll
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+panPage 0 1
+panPage 0 1
+panPage 0 -1
+panPage 0 -1
+fit
+zoomBox 286.510 199.650 701.697 -30.123
+zoomBox 342.913 118.975 499.183 -10.402
+displayClockTree -skew -allLevel -postRoute
+fit
+fit
+zoomBox -55.044 595.320 724.763 -12.380
+fit
+zoomBox 252.798 126.016 589.029 -70.044
+zoomBox 452.783 44.431 536.663 -0.186
+fit
+zoomBox 144.565 494.184 535.799 245.781
+fit
+zoomBox 333.529 319.415 510.959 224.490
+fit
+setLayerPreference relFPlan -isVisible 0
+setLayerPreference relFPlan -isVisible 1
+setLayerPreference term -isVisible 0
+setLayerPreference ruler -isVisible 0
+setLayerPreference term -isVisible 1
+setLayerPreference ruler -isVisible 1
+setLayerPreference layerBlk -isVisible 0
+setLayerPreference layerBlk -isVisible 1
+setLayerPreference allM10 -isVisible 0
+setLayerPreference allM10 -isVisible 1
+setLayerPreference allM10Cont -isVisible 0
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM4 -isVisible 0
+setLayerPreference allM4 -isVisible 1
+setLayerPreference allM4Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference inst -isVisible 0
+setLayerPreference stdCell -isVisible 0
+setLayerPreference coverCell -isVisible 0
+setLayerPreference phyCell -isVisible 0
+setLayerPreference block -isVisible 0
+setLayerPreference pg -isVisible 0
+setLayerPreference layerBlk -isVisible 0
+setLayerPreference obstruct -isVisible 0
+setLayerPreference metalFill -isVisible 0
+setLayerPreference stdRow -isVisible 0
+setLayerPreference violation -isVisible 0
+setLayerPreference net -isVisible 0
+setLayerPreference power -isVisible 0
+setLayerPreference busguide -isVisible 0
+setLayerPreference page2/2 -isVisible 0
+displayClockTree -skew -postRoute
+displayClockTree -level 1 -skew -postRoute
+setLayerPreference page2/1 -isVisible 0
+setLayerPreference page2/1 -isVisible 1
+setLayerPreference page2/1 -isVisible 0
+setLayerPreference page2/1 -isVisible 1
+setLayerPreference page2/1 -isVisible 0
+setLayerPreference page2/2 -isVisible 1
+fit
+deselectAll
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+selectPath 1
+zoomBox 244.814 157.953 652.016 -8.831
+deselectAll
+selectPath 1
+deselectAll
+selectPath 1

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "X:/EC772/approx/test_approx_isim_beh.exe" -prj "X:/EC772/approx/test_approx_beh.prj" "work.test_approx" "work.glbl" 

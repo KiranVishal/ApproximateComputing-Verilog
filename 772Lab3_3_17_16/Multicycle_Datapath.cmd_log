@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/Yoshi/Documents/Dropbox/SchoolWork/Boston/EC551/Lab3/Multicycle_Datapath.xst" -ofn "E:/Yoshi/Documents/Dropbox/SchoolWork/Boston/EC551/Lab3/Multicycle_Datapath.syr" 

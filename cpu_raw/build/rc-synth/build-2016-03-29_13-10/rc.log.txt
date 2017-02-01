@@ -1,0 +1,251 @@
+Checking out license 'RTL_Compiler_Ultra'... (1 seconds elapsed)
+
+                       Cadence Encounter(R) RTL Compiler
+               Version v07.10-s016_1 (32-bit), built Sep 13 2007
+
+
+
+================================================================================
+              Welcome to Encounter (TM) Encounter(R) RTL Compiler
+
+Here is a quick introduction on how to access our product information.  
+If you do not want this message to appear in the future, create an 
+initialization file (an empty file will do) in your home directory 
+called '~/.cadence/.synth_init'.
+
+  To access the product documentation in HTML and PDF, type 'cdnshelp'
+    at the system prompt. 
+  For a list of available commands, type 'help'. 
+  To view a man page for a command, type 'man <commandName>'.
+  To view a man page for an error message, type 'man <messageID>'.
+  For a list of all possible object types, type 'get_attribute -help'.
+  For a list of all available attributes by object type, type
+    'get_attribute * <object_type> -help'.
+  For a list of all attributes for every object type, type
+    'get_attribute * * -help'
+  To list only writable attributes, substitute 'get_attribute' with
+    'set_attribute'.
+  To get a template script to run RTL Compiler, use the 'write_template'
+    command.
+  To get a template script to run Conformal based on the current RTL
+    Compiler session, use the 'write_do_lec' command.
+  
+  Obsolete attributes in the current tool version.
+  To learn more, type 'get_attribute -help <attribute> <object>'.
+
+      object  attribute
+      ------  ---------
+    instance  black_box
+    instance  dft_inherited_dont_scan
+    instance  write_positional_connections
+         net  logic0_driven
+         net  logic1_driven
+        root  area_per_unit_length
+        root  bit_blast_constants
+        root  bit_blast_mapped_ports
+        root  capacitance_per_unit_length
+        root  degenerate_complex_seqs
+        root  exact_match_seqs_async_controls
+        root  gen_no_negative_index
+        root  gen_unconnected_port_style
+        root  gen_write_empty_module_for_logic_abstract
+        root  hdl_array_generator
+        root  hdl_flatten_array
+        root  hdl_old_reg_naming
+        root  hdl_record_generator
+        root  hdl_reg_naming_style_scalar
+        root  hdl_reg_naming_style_vector
+        root  hdl_vector_naming_style
+        root  pqos_virtual_buffer
+        root  resistance_per_unit_length
+
+Send us feedback at rc_feedback@cadence.com.
+================================================================================
+
+rc:/> source libs.tcl
+  Setting attribute of root '/': 'library' = /ad/eng/courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_typical_conditional_ccs.lib
+  Setting attribute of root '/': 'hdl_search_path' =  ../../../src 
+  Setting attribute of root '/': 'hdl_max_loop_limit' = 10000
+rc:/> read_hdl ${VERILOG_SRCS}
+Error   : Cannot open file. [VLOGPT-650] [read_hdl]
+        : File '../../../src/Multicycle_Datapath.v'.
+        : The specified file could not be opened.  Check the value of the hdl_search_path attribute.
+Failed on read_hdl { ../../../src/Multicycle_Datapath.v  }
+rc:/> read_hdl ${VERILOG_SRCS}
+rc:/> elaborate
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '3K_hvratio_1_2' is non-monotonic.
+  Elaborating top-level block 'Multicycle_Datapath' from file './../../../src/Multicycle_Datapath.v'.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'input4_mux' in file '../../../src/General_Modules.v' on line 68.
+Warning : Referenced signal not in sensitivity list.  This may cause simulation mismatches between the original and synthesized designs. [CDFG-360]
+        : Signal 'Out' in module 'ALU' in file '../../../src/ALU.v' on line 51.
+  Done elaborating 'Multicycle_Datapath'.
+rc:/> check_design
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+ Summary
+ ------- 
+
+              Name              Total 
+--------------------------------------
+Unresolved References               0 
+Empty Modules                       0 
+Unloaded Port(s)                    0 
+Unloaded Sequential Pin(s)          0 
+Assigns                             0 
+Undriven Port(s)                    0 
+Undriven Leaf Pin(s)                0 
+Undriven hierarchical pin(s)        0 
+Multidriven Port(s)                 0 
+Multidriven Leaf Pin(s)             0 
+Multidriven hierarchical Pin(s)     0 
+Constant Port(s)                    0 
+Constant Leaf Pin(s)                0 
+Constant hierarchical Pin(s)     1346 
+
+  Done Checking the design.
+rc:/> source synth.sdc
+/designs/Multicycle_Datapath/timing/external_delays/out_con
+rc:/> synthesize -to_mapped
+Deleting 8 hierarchical instances.  They do not transitively
+  drive any primary outputs.
+        Trying carrysave optimization (configuration 1 of 1) on module 'ALU'...
+Info    : Done carrysave optimization. [RTLOPT-20]
+        : There are 3 CSA groups in module 'ALU'... Accepted.
+Deleting 2 hierarchical instances.  They do not transitively
+  drive any primary outputs.
+Deleting 4 hierarchical instances.  They do not transitively
+  drive any primary outputs.
+Mapping Multicycle_Datapath to gates.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][9]'.
+        : This optimization was enabled by the root attribute 'optimize_constant_0_flops'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][8]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][7]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][6]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][5]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][4]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][3]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][31]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][30]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][2]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][29]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][28]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][27]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][26]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][25]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][24]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][23]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][22]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][21]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][20]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][1]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][19]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][18]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][17]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][16]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][15]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][14]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][13]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][12]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][11]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][10]'.
+Info    : Replacing a flip-flop with a logic constant 0. [GLO-12]
+        : The instance is 'reg_file/reg_file_reg[0][0]'.
+Deleting 32 sequential instances.  They do not transitively
+  drive any primary outputs.
+ 
+Global mapping target info
+==========================
+Cost Group 'default' target slack:   119 ps
+Target path end-point (Pin: PC_reg/Out_reg[12]/d)
+
+ 
+Global mapping status
+=====================
+                         Worst  
+                 Total    Neg   
+Operation         Area   Slack  Worst Path
+-------------------------------------------------------------------------------
+ global_map     367252       0  N/A
+ fine_map       363796       0  N/A
+ area_map       363796       0  N/A
+ area_map       363796       0  N/A
+ area_map       363796       0  N/A
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max 
+Operation         Area   Slack     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay     363796       0         0        0
+ init_drc       363796       0         0        0
+ init_area      363796       0         0        0
+ rem_buf        362902       0         0        0
+ rem_buf        361496       0         0        0
+ rem_inv        361086       0         0        0
+ rem_inv        360977       0         0        0
+ merge_bi       360045       0         0        0
+ rem_inv_qb     360044       0         0        0
+ rem_inv        360028       0         0        0
+ merge_bi       360025       0         0        0
+ 
+Incremental optimization status
+===============================
+                         Worst  - - DRC Totals - - 
+                 Total    Neg       Max       Max 
+Operation         Area   Slack     Trans      Cap 
+-------------------------------------------------------------------------------
+ init_delay     360025       0         0        0
+ init_drc       360025       0         0        0
+ init_area      360025       0         0        0
+
+  Done mapping Multicycle_Datapath
+  Synthesis succeeded.
+rc:/> write -mapped > synthesized.v
+rc:/> report timing > timing.rpt
+rc:/> report area > cell_area.rpt
+rc:/> report gates > gate_area.rpt
+rc:/> report design_rules Multicycle_Datapath > design_rule_violations.rpt
+rc:/> exit
+rc:/> 

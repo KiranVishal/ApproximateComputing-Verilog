@@ -1,0 +1,270 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter release has been compiled with OA version 22.04-p068.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.13-s229_1 (32bit) 10/22/2010 15:32 (Linux 2.6)
+@(#)CDS: NanoRoute v09.13-s023 NR101021-1752/USR65-UB (database version 2.30, 109.2.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.13-s071_1 (32bit) 10/18/2010 04:07:09 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.12-e022 (32bit) 10/22/2010 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.13-s122_1 (32bit) Oct 18 2010 03:21:02 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.13-s009
+--- Starting "Encounter v09.13-s229_1" on Tue Apr 26 15:58:56 2016 (mem=46.5M) ---
+--- Running on vlsi23 (x86_64 w/Linux 2.6.32-573.12.1.el6.x86_64) ---
+This version was compiled on Fri Oct 22 15:32:54 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - Multicycle_Datapath.enc.dat/Multicycle_Datapath.conf
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209257) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209283) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209435) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209452) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209535) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 209552) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217583) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217609) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217761) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217778) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217861) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 217878) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535834) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535860) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535886) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535912) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535972) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 535989) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 536006) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_slow_conditional_ccs.lib, block starting at: 536023) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**ERROR: (ENCTS-296):	The nominal PVT (1.00, 1.10, 25.00) of timing library 'NangateOpenCellLibrary' does not match with previously read timing library of same name with nominal PVT (1.00, 0.95, 125.00). To read this library change the library name.
+**ERROR: (TECHLIB-281):	Attempt to read .lib library '../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_typical_conditional_ccs.lib' failed
+**ERROR: (ENCTS-296):	The nominal PVT (1.00, 1.10, 25.00) of timing library 'NangateOpenCellLibrary' does not match with previously read timing library of same name with nominal PVT (1.00, 1.25, 0.00). To read this library change the library name.
+**ERROR: (TECHLIB-281):	Attempt to read .lib library '../../../../../../../../../courses/ec/ec772/Nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_typical_conditional_ccs.lib' failed
+*** End library_loading (cpu=0.05min, mem=27.2M, fe_cpu=0.13min, fe_mem=317.6M) ***
+Loading preference file Multicycle_Datapath.enc.dat/enc.pref.tcl ...
+Loading mode file Multicycle_Datapath.enc.dat/Multicycle_Datapath.mode ...
+loading place ...
+loading route ...
+<CMD> setDrawView place
+<CMD> fit
+<CMD> setDrawView ameba
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> fit
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_powerup_analysis -mode accurate -ultrasim_simulation_mode ms
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//Multicycle_Datapath.rpt
+
+
+Extraction called for design 'Multicycle_Datapath' of instances=22103 and nets=22189 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+Default RC Extraction called for design Multicycle_Datapath.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+RCMode: Default
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res Scaling Factor     : 1.00000
+Shrink Factor                : 1.00000
+Default RC extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Default RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 376.238M)
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.1, MEM = 398.0M, InitMEM = 397.9M)
+Number of Loop : 0
+Start delay calculation (mem=398.008M)...
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via2_5' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via1_4' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via3_2' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via4_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via5_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via6_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via7_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via8_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via9_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Delay calculation completed. (cpu=0:00:01.6 real=0:00:02.0 mem=404.094M 0)
+*** CDM Built up (cpu=0:00:02.3  real=0:00:03.0  mem= 404.1M) ***
+Start force assigning power rail voltages for view default_view_setup
+Finished assigning power rail voltages
+
+INFO (POWER-1606): Found clock 'input_clk' with frequency 200MHz from SDC file.
+
+
+Propagating signal activity...
+
+
+Starting Levelizing
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT)
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 5%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 10%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 15%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 20%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 25%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 30%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 35%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 40%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 45%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 50%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 55%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 60%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 65%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 70%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 75%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 80%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 85%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 90%
+2016-Apr-26 16:03:38 (2016-Apr-26 20:03:38 GMT): 95%
+
+Finished Levelizing
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT)
+
+Starting Activity Propagation
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT)
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 5%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 10%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 15%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 20%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 25%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 30%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 35%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 40%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 45%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 50%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 55%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 60%
+2016-Apr-26 16:03:39 (2016-Apr-26 20:03:39 GMT): 65%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 70%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 75%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 80%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 85%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 90%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 95%
+
+Finished Activity Propagation
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT)
+
+Starting Calculating power
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT)
+
+Calculating power dissipation...
+
+ ... Calculating switching power
+  instance ALU_reg/Out_reg[31] is not connected to any rail
+  instance ALU_reg/Out_reg[30] is not connected to any rail
+  instance ALU_reg/Out_reg[29] is not connected to any rail
+  instance ALU_reg/Out_reg[28] is not connected to any rail
+  instance ALU_reg/Out_reg[27] is not connected to any rail
+  only first five unconnected instances are listed...
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 5%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 10%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 15%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 20%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 25%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 30%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 35%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 40%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 45%
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 50%
+ ... Calculating internal and leakage power
+2016-Apr-26 16:03:40 (2016-Apr-26 20:03:40 GMT): 55%
+2016-Apr-26 16:03:41 (2016-Apr-26 20:03:41 GMT): 60%
+2016-Apr-26 16:03:41 (2016-Apr-26 20:03:41 GMT): 65%
+2016-Apr-26 16:03:41 (2016-Apr-26 20:03:41 GMT): 70%
+2016-Apr-26 16:03:42 (2016-Apr-26 20:03:42 GMT): 75%
+2016-Apr-26 16:03:42 (2016-Apr-26 20:03:42 GMT): 80%
+2016-Apr-26 16:03:45 (2016-Apr-26 20:03:45 GMT): 85%
+2016-Apr-26 16:03:47 (2016-Apr-26 20:03:47 GMT): 90%
+2016-Apr-26 16:03:47 (2016-Apr-26 20:03:47 GMT): 95%
+
+Finished Calculating power
+2016-Apr-26 16:03:48 (2016-Apr-26 20:03:48 GMT)
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       2.668      68.42%
+Total Switching Power:      0.9099      23.33%
+Total Leakage Power:      0.3214      8.241%
+Total Power:       3.899
+-----------------------------------------------------------------------------------------
+report_power consumed time (real time) 00:00:13 : increased peak memory
+(478M) by 19
+Output file is .//Multicycle_Datapath.rpt.
+<CMD> saveDesign Multicycle_Datapath.enc
+Redoing specifyClockTree ...
+Checking spec file integrity...
+**WARN: (ENCSYT-3036):	Design directory Multicycle_Datapath.enc.dat exists, rename it to Multicycle_Datapath.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "Multicycle_Datapath.enc.dat/Multicycle_Datapath.v.gz" ...
+Saving clock tree spec file 'Multicycle_Datapath.enc.dat/Multicycle_Datapath.ctstch' ...
+Saving configuration ...
+Saving preference file Multicycle_Datapath.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=419.4M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.2 real=0:00:01.0 mem=419.4M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+
+*** Memory Usage v0.159.2.9 (Current mem = 419.438M, initial mem = 46.484M) ***
+--- Ending "Encounter" (totcpu=0:00:59.3, real=0:11:39, mem=419.4M) ---

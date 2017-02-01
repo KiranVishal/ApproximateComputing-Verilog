@@ -1,0 +1,6 @@
+verilog work "Register_File.v"
+verilog work "Memory_File.v"
+verilog work "General_Modules.v"
+verilog work "Control_SM.v"
+verilog work "ALU.v"
+verilog work "Multicycle_Datapath.v"
